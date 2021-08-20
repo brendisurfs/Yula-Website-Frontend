@@ -8,7 +8,7 @@ import {
   Box,
   Grid,
   GridItem,
-  Container,
+  useColorMode,
 } from "@chakra-ui/react";
 import Link from "next/link";
 
@@ -21,6 +21,7 @@ import DayNightButton from "./DayNightButton";
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { toggleColorMode } = useColorMode();
 
   return (
     <ChakraProvider>
@@ -41,19 +42,25 @@ const Header = () => {
         >
           <Flex justifyContent="space-between">
             <Grid
-              gridTemplateColumns="repeat(4, 1fr)"
+              alignItems="center"
+              textAlign="center"
+              textTransform="uppercase"
+              gridTemplateColumns="repeat(5, 1fr)"
               className="left"
               left={0}
             >
               <Link href="/">Yula</Link>
+              <p>|</p>
               <PageLink pageRoute="/music" text="Music"></PageLink>
+              <PageLink pageRoute="/schedule" text="Schedule"></PageLink>
               <PageLink pageRoute="/about" text="About"></PageLink>
             </Grid>
             <div className="right">
               <Button onClick={onOpen} rounded={0}>
                 Log In
               </Button>
-              <DayNightButton />
+              {/* DAY NIGHT BUTTON */}
+              <DayNightButton toggle={toggleColorMode} />
             </div>
           </Flex>
 
