@@ -15,6 +15,11 @@ const Header = () => {
 
   return (
     <ChakraProvider>
+      <meta name="website" content="yula.com"></meta>
+      <meta
+        name="description"
+        content="Website for electronic musician Yula."
+      ></meta>
       <Heading title="yula" justifyContent="space-between">
         <Flex
           flexDir="row"
