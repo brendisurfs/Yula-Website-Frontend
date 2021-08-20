@@ -1,4 +1,6 @@
-import { chakra, ChakraProvider, useColorMode } from "@chakra-ui/react";
+// Links for each sub page, NOT for home page link.
+
+import { Box, chakra, ChakraProvider, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
 type LinkProps = {
   text: string;
@@ -8,7 +10,9 @@ type LinkProps = {
 const PageLink = (props: LinkProps) => {
   return (
     <ChakraProvider>
-      <Link href={props.pageRoute}>{props.text}</Link>
+      <Box fontSize="24" p={2}>
+        <Link href={props.pageRoute}>{props.text}</Link>
+      </Box>
     </ChakraProvider>
   );
 };

@@ -1,9 +1,7 @@
 import {
   Button,
   ChakraProvider,
-  Flex,
-  Heading,
-  Input,
+  IconButton,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -15,7 +13,13 @@ const DayNightButton: NextComponentType = () => {
   const { toggleColorMode } = useColorMode();
   return (
     <ChakraProvider>
-      <Button onClick={toggleColorMode}>Day/Night</Button>
+      <IconButton
+        aria-label="day night switch"
+        icon={<MoonIcon />}
+        onClick={toggleColorMode}
+      >
+        Day/Night
+      </IconButton>
     </ChakraProvider>
   );
 };

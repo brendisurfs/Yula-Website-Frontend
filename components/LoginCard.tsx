@@ -39,6 +39,14 @@ const LoginCard = ({ isOpen, onClose }: props): JSX.Element => {
             mb={3}
             type="email"
           />
+
+          <Input
+            placeholder="password"
+            variant="filled"
+            mb={3}
+            type="password"
+          />
+
           <Button rounded={0} onClick={() => console.log("nice")}>
             Log In
           </Button>
