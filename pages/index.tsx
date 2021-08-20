@@ -17,7 +17,6 @@ const Home: NextPage = () => {
   return (
     <Box>
       <Header />
-      <LoginCard />
     </Box>
   );
 };

@@ -1,6 +1,12 @@
-import { useDisclosure, Button, Flex, Heading } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  useDisclosure,
+  Button,
+  Flex,
+  Heading,
+  UseDisclosureProps,
+} from "@chakra-ui/react";
 import Link from "next/link";
-import { ChakraProvider } from "@chakra-ui/react";
 import PageLink from "./PageLink";
 import LoginCard from "./LoginCard";
 
@@ -24,11 +30,11 @@ const Header = () => {
           <PageLink pageRoute="/music" text="music"></PageLink>
         </Flex>
         <Flex>
-          <Button onClick={() => isOpen} rounded={0}>
+          <Button onClick={onOpen} rounded={0}>
             Log In
           </Button>
           {/* login card goes here */}
-          <LoginCard onClose={onClose} onOpen={onOpen} isOpen={isOpen} />
+          <LoginCard onClose={onClose} isOpen={isOpen} />
         </Flex>
       </Heading>
     </ChakraProvider>

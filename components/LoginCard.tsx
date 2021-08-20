@@ -11,30 +11,39 @@ import {
   Modal,
   useDisclosure,
   UseDisclosureReturn,
+  ChakraProps,
+  ChakraProviderProps,
+  UseDisclosureProps,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 
-const LoginCard = (props: UseDisclosureReturn): JSX.Element => {
+type props = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+const LoginCard = ({ isOpen, onClose }: props): JSX.Element => {
   const formBackground = useColorModeValue("gray.100", "gray.700");
   return (
-    <Modal onClose={props.onClose} isOpen={props.isOpen}>
-      <Button onClick={() => props.isOpen}>Open Modal</Button>
-      <Flex direction="column" background={formBackground} p={12} rounded={4}>
-        <Heading mb={6}>Log In</Heading>
-        <Input
-          placeholder="brendi@yula.com"
-          variant="filled"
-          mb={3}
-          type="email"
-        />
-        <Button
-          mb={6}
-          colorScheme="messenger"
-          rounded={4}
-          onClick={() => console.log("nice")}
-        >
-          Log In
-        </Button>
-      </Flex>
+    <Modal onClose={onClose} isOpen={isOpen}>
+      <ModalContent rounded={0}>
+        <ModalHeader>Log In</ModalHeader>
+        <ModalCloseButton />
+        <ModalBody>
+          <Input
+            placeholder="brendi@yula.com"
+            variant="filled"
+            mb={3}
+            type="email"
+          />
+          <Button rounded={0} onClick={() => console.log("nice")}>
+            Log In
+          </Button>
+        </ModalBody>
+      </ModalContent>
     </Modal>
   );
 };

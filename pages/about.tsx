@@ -1,5 +1,11 @@
+import _Layout from "./_Layout";
+
 const AboutPage = () => {
-  return <div>about page</div>;
+  return (
+    <div>
+      <_Layout></_Layout>
+    </div>
+  );
 };
 
 export default AboutPage;

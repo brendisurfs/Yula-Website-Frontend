@@ -2,7 +2,7 @@ import Header from "../components/Header";
 const _Layout = () => {
   return (
     <div>
-      <Header></Header>
+      <Header />
     </div>
   );
 };
