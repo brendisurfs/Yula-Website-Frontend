@@ -1,4 +1,4 @@
-import { chakra, ChakraProvider } from "@chakra-ui/react";
+import { chakra, ChakraProvider, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
 type LinkProps = {
   text: string;

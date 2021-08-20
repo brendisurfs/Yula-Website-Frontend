@@ -4,6 +4,7 @@ import Image from "next/image";
 import {
   Box,
   Button,
+  ChakraProvider,
   Flex,
   Heading,
   Input,
@@ -12,12 +13,13 @@ import {
 } from "@chakra-ui/react";
 import LoginCard from "../components/LoginCard";
 import Header from "../components/Header";
+import DayNightButton from "../components/DayNightButton";
 
 const Home: NextPage = () => {
   return (
-    <Box>
+    <ChakraProvider>
       <Header />
-    </Box>
+    </ChakraProvider>
   );
 };
 

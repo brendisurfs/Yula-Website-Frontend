@@ -5,6 +5,9 @@ import {
   Flex,
   Heading,
   UseDisclosureProps,
+  Box,
+  Grid,
+  GridItem,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import PageLink from "./PageLink";
@@ -21,19 +24,13 @@ const Header = () => {
         content="Website for electronic musician Yula."
       ></meta>
       <Heading title="yula" justifyContent="space-between">
-        <Flex
-          flexDir="row"
-          justifyContent="space-around"
-          m={4}
-          padding={4}
-          className="menu-start"
-        >
-          <p>
+        <Grid templateColumns="repeat(5, 1fr)" gap={6}>
+          <Box>
             <Link href="/">Yula</Link>
-          </p>
-          <PageLink pageRoute="/about" text="About"></PageLink>
-          <PageLink pageRoute="/music" text="music"></PageLink>
-        </Flex>
+          </Box>
+          <PageLink text="item 1" pageRoute="/"></PageLink>
+          <PageLink text="item 2" pageRoute="/"></PageLink>
+        </Grid>
         <Flex>
           <Button onClick={onOpen} rounded={0}>
             Log In

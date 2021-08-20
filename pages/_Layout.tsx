@@ -1,9 +1,11 @@
+import { ChakraProvider } from "@chakra-ui/react";
+import DayNightButton from "../components/DayNightButton";
 import Header from "../components/Header";
 const _Layout = () => {
   return (
-    <div>
+    <ChakraProvider>
       <Header />
-    </div>
+    </ChakraProvider>
   );
 };
 
