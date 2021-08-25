@@ -14,11 +14,12 @@ import {
 import LoginCard from "../components/LoginCard";
 import Header from "../components/Header";
 import DayNightButton from "../components/DayNightButton";
+import AdaptiveNavbar from "../components/AdaptiveNavbar";
 
 const Home: NextPage = () => {
   return (
     <ChakraProvider>
-      <Header />
+      <AdaptiveNavbar />
     </ChakraProvider>
   );
 };

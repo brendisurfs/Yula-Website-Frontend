@@ -4,6 +4,7 @@ const MusicPage = () => {
   return (
     <div>
       <_Layout></_Layout>
+      <p>This is the music page</p>
     </div>
   );
 };

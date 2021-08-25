@@ -32,7 +32,7 @@ const Header = () => {
       ></meta>
 
       {/* HEADER DISPLAY STARTS HERE */}
-      <div>
+      <div className="desktop-menu">
         <Heading
           color="dark"
           p={4}
@@ -60,7 +60,7 @@ const Header = () => {
                 Log In
               </Button>
               {/* DAY NIGHT BUTTON */}
-              <DayNightButton toggle={toggleColorMode} />
+              {/* <DayNightButton toggle={toggleColorMode} /> */}
             </div>
           </Flex>
 

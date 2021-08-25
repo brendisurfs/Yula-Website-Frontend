@@ -1,16 +1,19 @@
-import { useMediaQuery } from "@chakra-ui/react";
+import { useState } from "react";
+
 //CUSTOM COMPONENTS
 //	|
 //	v
 import Header from "./Header";
-import SideMenu from "./SideMenu";
+import HeaderMobile from "./HeaderMobile";
 
 const AdaptiveNavbar = () => {
-  const [isMobile] = useMediaQuery("(display-mode: browser )");
   return (
     <>
       {/* standin: query screen, if screen is smaller than x size, return the SideMenu comp. if its larger than x, return Header. */}
-      {isMobile ? <SideMenu /> : <Header />}
+      {/* {isMobile ? <SideMenu /> : <Header />} */}
+      {/* THIS WHOLE THING NEEDS TO BE DONE WITH CSS */}
+      <HeaderMobile />
+      <Header />
     </>
   );
 };

@@ -19,7 +19,7 @@ const HeaderMobile = () => {
         alignItems="center"
         textAlign="center"
         textTransform="uppercase"
-        gridTemplateColumns="repeat(5, 1fr)"
+        gridTemplateColumns="repeat(2, 1fr)"
         className="left"
         left={0}
       >

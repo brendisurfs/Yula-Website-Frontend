@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@media screen and (min-width: 680px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .desktop-menu {
+    display: none;
+  }
+}
