@@ -33,7 +33,7 @@ const SideMenu = () => {
           icon={<HamburgerIcon />}
           variant="normal"
         />
-        <MenuList>
+        <MenuList backgroundColor="rgb(24,24,24)" borderColor="rgb(24,24,24)">
           <MenuItem>
             <PageLink pageRoute="/" text="home" />
           </MenuItem>

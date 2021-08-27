@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
+import AdaptiveNavbar from "../components/AdaptiveNavbar";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,7 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="favicon" href="/favicon.ico" />
       </Head>
+
+      <AdaptiveNavbar />
       <Component></Component>
+      <Footer />
     </ChakraProvider>
   );
 }

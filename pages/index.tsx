@@ -9,7 +9,6 @@ import Logo3DSection from "../components/Logo3DSection";
 const Home: NextPage = () => {
   return (
     <ChakraProvider>
-      <AdaptiveNavbar />
       <div className="content">
         {/* <video muted autoPlay>
           <source src="YulaLogoZoom.mp4" type="video/mp4" />

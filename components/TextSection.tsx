@@ -3,11 +3,17 @@ import { ChakraProvider, Flex } from "@chakra-ui/react";
 const TextSection = () => {
   return (
     <ChakraProvider>
-      <Flex alignContent="center" padding="2rem">
+      <Flex
+        backgroundColor="rgb(12,12,12)"
+        color="ivory"
+        lignContent="center"
+        padding="2rem"
+        height={800}
+        width="100%"
+      >
         <div>
-          <p>THIS IS THE CONTENT SECTION</p>
+          <p>CONTENT GOES HERE</p>
         </div>
-        ;
       </Flex>
     </ChakraProvider>
   );

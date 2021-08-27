@@ -1,13 +1,14 @@
+import { ChakraProvider, Flex } from "@chakra-ui/react";
 import TextSection from "../components/TextSection";
 import _Layout from "./_Layout";
 
 const AboutPage = () => {
   return (
-    <div>
-      <_Layout></_Layout>
-      <div className="aboutPage">this is the about</div>
-      <TextSection></TextSection>
-    </div>
+    <ChakraProvider>
+      <Flex backgroundColor="rgb(12,12,12)" color="ivory">
+        <TextSection></TextSection>
+      </Flex>
+    </ChakraProvider>
   );
 };
 

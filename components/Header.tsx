@@ -33,7 +33,6 @@ const Header = () => {
       {/* HEADER DISPLAY STARTS HERE */}
       <div className="desktop-menu">
         <Heading
-          background="rgb(12, 12, 12)"
           backgroundColor="rgb(12, 12, 12)"
           color="ivory"
           p={6}
@@ -57,15 +56,17 @@ const Header = () => {
               <PageLink pageRoute="/about" text="About"></PageLink>
             </Grid>
             <div className="right">
-              <Button onClick={onOpen} rounded={0} variant="normal">
+              <Button
+                onClick={onOpen}
+                rounded={0}
+                variant="normal"
+                // backgroundColor="blue"
+                // fontWeight="light"
+              >
                 Log In
               </Button>
-              {/* DAY NIGHT BUTTON */}
-              {/* <DayNightButton toggle={toggleColorMode} /> */}
             </div>
           </Flex>
-
-          <Flex>{/* login card goes here */}</Flex>
         </Heading>
         <LoginCard onClose={onClose} isOpen={isOpen} />
       </div>

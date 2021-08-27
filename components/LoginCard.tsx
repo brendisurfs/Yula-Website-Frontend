@@ -28,14 +28,15 @@ type props = {
 const LoginCard = ({ isOpen, onClose }: props): JSX.Element => {
   const formBackground = useColorModeValue("gray.100", "gray.700");
   return (
-    <Modal onClose={onClose} isOpen={isOpen}>
-      <ModalContent rounded={0}>
+    <Modal onClose={onClose} isOpen={isOpen} colorScheme="teal">
+      <ModalContent rounded={0} backgroundColor="rgb(24,24,24)" color="white">
         <ModalHeader>Log In</ModalHeader>
-        <ModalCloseButton />
-        <ModalBody>
+        <ModalCloseButton rounded={0} />
+        <ModalBody p={2}>
           <Input
+            backgroundColor="rgb(32,32,32)"
             rounded={0}
-            placeholder="brendi@yula.com"
+            placeholder="admin email"
             variant="filled"
             mb={3}
             type="email"
@@ -43,13 +44,18 @@ const LoginCard = ({ isOpen, onClose }: props): JSX.Element => {
 
           <Input
             rounded={0}
+            backgroundColor="rgb(32,32,32)"
             placeholder="password"
             variant="filled"
             mb={3}
             type="password"
           />
 
-          <Button rounded={0} onClick={() => console.log("nice")}>
+          <Button
+            backgroundColor="blue"
+            rounded={0}
+            onClick={() => console.log("nice")}
+          >
             Log In
           </Button>
         </ModalBody>
