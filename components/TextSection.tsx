@@ -1,4 +1,5 @@
 import { ChakraProvider, Flex } from "@chakra-ui/react";
+import { AppProps } from "next/app";
 
 const TextSection = () => {
   return (
@@ -6,14 +7,12 @@ const TextSection = () => {
       <Flex
         backgroundColor="rgb(12,12,12)"
         color="ivory"
-        lignContent="center"
+        alignContent="center"
         padding="2rem"
         height={800}
         width="100%"
       >
-        <div>
-          <p>CONTENT GOES HERE</p>
-        </div>
+        <div></div>
       </Flex>
     </ChakraProvider>
   );

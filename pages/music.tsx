@@ -3,8 +3,8 @@ import _Layout from "./_Layout";
 const MusicPage = () => {
   return (
     <div>
-      <_Layout></_Layout>
       <p>This is the music page</p>
+      List out music here
     </div>
   );
 };

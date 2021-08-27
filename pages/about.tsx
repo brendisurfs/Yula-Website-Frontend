@@ -5,7 +5,7 @@ import _Layout from "./_Layout";
 const AboutPage = () => {
   return (
     <ChakraProvider>
-      <Flex backgroundColor="rgb(12,12,12)" color="ivory">
+      <Flex>
         <TextSection></TextSection>
       </Flex>
     </ChakraProvider>
