@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
       <Head>
-        <link rel="favicon" href="/favicon.ico" />
+        <link rel="favicon" href="/public/favicon.ico" />
       </Head>
 
       <AdaptiveNavbar />

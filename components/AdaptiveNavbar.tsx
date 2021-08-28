@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 
 //CUSTOM COMPONENTS
@@ -9,6 +10,9 @@ import HeaderMobile from "./HeaderMobile";
 const AdaptiveNavbar = () => {
   return (
     <>
+      <Head>
+        <meta />
+      </Head>
       <HeaderMobile />
       <Header />
     </>

@@ -35,7 +35,7 @@ const HeaderMobile = () => {
           fontWeight="bold"
         >
           <Link href="/">Yula</Link>
-          <p>|</p>
+          {/* <p>|</p> */}
         </Grid>
         <div className="right">
           <SideMenu />
