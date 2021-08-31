@@ -33,7 +33,7 @@ const Header = () => {
       {/* HEADER DISPLAY STARTS HERE */}
       <div className="desktop-menu">
         <Heading
-          backgroundColor="rgb(12, 12, 12)"
+          backgroundColor="black"
           color="ivory"
           p={6}
           m={0}

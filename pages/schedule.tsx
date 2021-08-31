@@ -10,3 +10,7 @@ type Show = {
   Show_Desc: string;
   Show_Title: string;
 };
+
+const getSchedule = () => {
+  axios.get("http://localhost:1337/shows");
+};

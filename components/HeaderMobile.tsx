@@ -21,7 +21,7 @@ const HeaderMobile = () => {
         p={4}
         backgroundColor="rgb(12,12,12)"
         color="ivory"
-        fontSize="36"
+        fontSize="24"
         fontStyle="bold"
         justifyContent="space-between"
       >
