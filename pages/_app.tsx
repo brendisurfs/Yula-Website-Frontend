@@ -6,16 +6,10 @@ import AdaptiveNavbar from "../components/AdaptiveNavbar";
 import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <ChakraProvider>
-      <Head>
-        <link rel="favicon" href="/public/favicon.ico" />
-      </Head>
-
-      <AdaptiveNavbar />
-      <Component></Component>
-      <Footer />
-    </ChakraProvider>
-  );
+      return (
+            <ChakraProvider>
+                  <Component></Component>
+            </ChakraProvider>
+      );
 }
 export default MyApp;

@@ -1,12 +1,13 @@
-import _Layout from "./_Layout";
+import Layout from "../components/Layout";
+import _Layout from "../components/Layout";
 
 const MusicPage = () => {
-  return (
-    <div>
-      <p>This is the music page</p>
-      List out music here
-    </div>
-  );
+      return (
+            <Layout>
+                  <p>This is the music page</p>
+                  List out music here
+            </Layout>
+      );
 };
 
 export default MusicPage;
